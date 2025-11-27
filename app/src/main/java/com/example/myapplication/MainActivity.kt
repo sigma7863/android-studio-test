@@ -32,8 +32,23 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    fun calculateFactorial(n: Int): Long {
+        var product: Long = 1
+        for (i in 1..n) {
+            product *= i
+        }
+        return product
+    }
+    val factorial = calculateFactorial(20)
+    //  val message = "タイトル"
+    //  var product: Long = 1 // productの数が大きくなるため、Long型を使う
+    //  for (i in 1..20) {
+    //      product *= i
+    //  }
     Text(
-        text = "Hello $name!",
+        text = factorial.toString(),
+        //  text = message,
+        //  text = product.toString(), // textはstring型のため、toStringでLong型からString型に変換している
         modifier = modifier
     )
 }
