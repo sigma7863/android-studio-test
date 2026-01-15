@@ -32,6 +32,17 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    // Catクラスをインスタンス化する
+    val tama = Cat(name = "タマ", age = 3, gender = "オス", breed = "三毛猫")
+    val kuro = Cat(name = "クロ", age = 1, gender = "メス", breed = "黒猫")
+
+    tama.say("${tama.name}は${kuro.gender}だにゃ")
+    kuro.say("${kuro.name}は${kuro.gender}だにゃ")
+
+    tama.sleep()
+    kuro.say("寝てるし...")
+    kuro.sleep()
+
     fun calculateFactorial(n: Int): Long {
         var product: Long = 1
         for (i in 1..n) {
