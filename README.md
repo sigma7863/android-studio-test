@@ -1,1 +1,3 @@
-[ZENStudy - スマートフォンアプリ開発:Androidアプリ(Kotlin)](https://www.nnn.ed.nico/courses/1680)
+# Android-Studio-Kotlin-Tutprial
+
+[Android 開発環境構築](https://www.nnn.ed.nico/courses/1680/chapters/20759)
